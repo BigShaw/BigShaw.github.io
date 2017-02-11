@@ -73,7 +73,7 @@
 
 
 
-@mixin font-size($sizeValue: 12 ){
+ @mixin font-size($sizeValue: 12 ){
   font-size: $sizeValue + px; //fallback for old browsers
   font-size: (0.125 * $sizeValue) + rem;
 }
@@ -87,10 +87,13 @@
 
 
 @mixin clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
