@@ -37,8 +37,13 @@
 }
 
 .yahei{
-  font-family: 'Maven Pro', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'lato', "Microsoft YaHei", "微软雅黑", sans-serif;
 }
+
+.dongqing{
+  font-family: 'lato', "Hiragino Sans GB", sans-serif;
+}
+
 
 
 @mixin mavenPro{
@@ -53,7 +58,9 @@
   font-family: 'Maven Pro', "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 
-
+@mixin dongqing{
+  font-family: 'Maven Pro', "Hiragino Sans GB", sans-serif;
+}
 
 
 // Fonts ---
@@ -171,27 +178,27 @@ $fonts:
 
 
 h1{
-  font-family: 'Maven Pro', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Maven Pro', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
   font-size: 3em;
   font-weight: 900;
 }
 
 
 h2{
-  font-family: 'Maven Pro', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Maven Pro', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
   font-size: 2em;
   font-weight: bold;
   margin: 0;
 }
 
 h3{
-  font-family: 'Maven Pro', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Maven Pro', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
   font-size: 1.2em;
   margin: 0;
 }
 
 h4{
-  font-family: 'Lato', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Lato', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 1.5em;
@@ -199,14 +206,14 @@ h4{
 }
 
 p{
-  font-family: 'Lato',"Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Lato', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 ul{
-  font-family: 'Lato', "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'Lato', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
 }
