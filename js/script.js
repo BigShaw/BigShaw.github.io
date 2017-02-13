@@ -3,8 +3,11 @@
 $(document).ready(function(){
 
 
-	//bxslider
-	$('.bxslider').bxSlider();
+	function loadSlider(){
+		$('.bxslider').bxSlider();
+	}
+
+
 
 
 	//fade page animation
@@ -36,16 +39,26 @@ $(document).ready(function(){
 
 
 	//lang
-    $('.lang .langSelect').click(function(){
-    	var thisValue = $(this).attr('lang-attr');
-    	if($(this).hasClass("active")){
+	$('.lang .langSelect').click(function(){
+		var thisValue = $(this).attr('lang-attr');
+		if($(this).hasClass("active")){
 
-    	} else{
-    		$('.lang .langSelect').removeClass("active");
-    		$(this).toggleClass("active");
-    		$("html").attr('lang',thisValue);
-    	}
-    });
+		} else{
+			$('.lang .langSelect').removeClass("active");
+			$(this).toggleClass("active");
+			$("html").attr('lang',thisValue);
+		}
+	});
+
+
+	$('.container a').click(function(e){
+		e.preventDefault();
+		$("#loadContentHere").html('').load('/works/myTrends.html #loadContentFrom', function(){
+			alert( "Load was performed." );
+			loadSlider();
+		});
+
+});
 
 
 
@@ -83,7 +96,7 @@ $(document).ready(function(){
   			columnWidth: 5,
   			itemSelector: '.item'
   		});
-	}, 1000);
+	});
 
 
 
@@ -151,6 +164,7 @@ $(document).ready(function(){
 	headroom.init(); 
 
 
+
 });
 
 
@@ -166,10 +180,9 @@ $(document).ready(function(){
 	heightUpdate();
 }); /* event listener */
 
-function heightUpdate()
-{
+function heightUpdate(){
 	divHeight = $( window ).height();
-	$("#fullscreen-cover").css("height", divHeight);
+	// $("#fullscreen-cover").css("height", divHeight);
 }
 /* responsive dom function begins */
 
