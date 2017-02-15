@@ -30,7 +30,7 @@
     position: absolute;
     top:-250px;
     margin: auto;
-    left: 0;
+    left: -1px;
     right: 0;
 
     .bx-pager{display:none;}
@@ -48,7 +48,21 @@
             top: 50%;
         }
     }
-}
+    @include planets($mars,max){
+        top: -260px;
+        width: 75%;
+    }
+    @include planets($earth,max){
+        top: -270px;
+    }
+    @include planets(470px,max){
+        top: -260px;
+    }
+    @include planets($venus,max){
+        top: -230px;
+    }
+
+}//slider-wrapper
 
 .story-book-slider{
     top:-210px;

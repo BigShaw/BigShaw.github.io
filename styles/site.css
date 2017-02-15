@@ -555,7 +555,6 @@ button:hover {
 /*------menubtnEnd-------*/
 /*---------------------------------------BUTTON END-------------------------------------*/
 img {
-  display: block;
   width: auto;
   max-width: 100%;
   height: auto; }
@@ -1063,7 +1062,7 @@ html[lang="zh-CN"] .displayEnglish {
   position: absolute;
   top: -250px;
   margin: auto;
-  left: 0;
+  left: -1px;
   right: 0; }
   .slider-wrapper .bx-pager {
     display: none; }
@@ -1076,6 +1075,19 @@ html[lang="zh-CN"] .displayEnglish {
     z-index: 100;
     position: static;
     top: 50%; }
+  @media only screen and (max-width: 819px) {
+    .slider-wrapper {
+      top: -260px;
+      width: 75%; } }
+  @media only screen and (max-width: 639px) {
+    .slider-wrapper {
+      top: -270px; } }
+  @media only screen and (max-width: 469px) {
+    .slider-wrapper {
+      top: -260px; } }
+  @media only screen and (max-width: 429px) {
+    .slider-wrapper {
+      top: -230px; } }
 
 .story-book-slider {
   top: -210px; }
@@ -1267,9 +1279,6 @@ html[lang="zh-CN"] .displayEnglish {
     width: 770px;
     margin: 15px; } }
 @media (max-width: 410px) {
-  .slider-wrapper {
-    top: -210px; }
-
   .story-book-slider {
     top: -200px; } }
 
