@@ -84,11 +84,11 @@
   }
 
   h4, h5, h6 {
-    color: #333;
+    // color: #333;
   }
 
   p, blockquote, li, cite {
-    color: #555;
+    // color: #555;
   }
 
   blockquote p {
@@ -210,6 +210,7 @@ p{
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #555; 
 }
 
 ul{
@@ -237,26 +238,6 @@ ul{
 .textCenterAlign {
   width: 100%;
   text-align: center;
-}
-
-.gradient-mask-text{
-  background: transparent;
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #61c2ff), color-stop(100%, #cd4444));
-  background: -webkit-linear-gradient(-45deg, #61c2ff 0%, #cd4444 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.cover-title{
-  top: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 55%;
-  max-width: 750px;
-  margin: -12% auto 0;
 }
 
 

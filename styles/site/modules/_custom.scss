@@ -3,6 +3,55 @@
 
 
 
+
+.gradient-mask-text{
+  background: transparent;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #61c2ff), color-stop(100%, #cd4444));
+  background: -webkit-linear-gradient(-45deg, #61c2ff 0%, #cd4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cover-title{
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 55%;
+  max-width: 750px;
+  margin: -12% auto 0;
+}
+
+
+.content_onCover{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 60%;
+    top: 50%;
+    color: #fff;
+    
+    .text_content{
+        text-shadow: 0 0 10px rgba(0,0,0,.8);
+        
+        h3{
+            color:$yellow;
+            font-weight: 100;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        h1{
+            margin:0;
+        }
+    }
+}
+
+
+
 .desaturate{
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -12,11 +61,11 @@
 
 .see-more-works{
     @include transition(all 0.3s ease);
-    @include border-radius(3px);
+    @include border-radius(5px);
 
     background-color: #444;
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     margin:30px auto 0;
     padding:20px;
     text-align: center;

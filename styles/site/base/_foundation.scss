@@ -207,12 +207,12 @@ button::-moz-focus-inner {
 
 // --- selection colors ---
 ::-moz-selection {
-  background: #000;
+  background: $yellow;
   color:      #fff;
   text-shadow: none;
 }
 ::selection {
-  // background: $kx-green;
+  background: $yellow;
   color:      #fff;
   text-shadow: none;
 }
