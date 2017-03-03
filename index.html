@@ -1,160 +1,243 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Colin Shaw</title>
 
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Maven+Pro:400,900,700,500|Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom.css" />
-  <link rel="stylesheet" href="css/animsition.css" />
-  <script src="js/jquery-1.11.0.js"></script>
-  <script src="js/script.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css" />
+
+
+  <!-- modernizr -->
+  <script src="js/third-party/modernizr-custom.js"></script>
+  <!-- modernizr -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+
   <script src="js/headroom.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
 
+  <script src="js/script.js"></script>
 </head>
+
+
 <body >
+  <div class="animsition">
 
-<div class="animsition">
-  <header id="header" class="animated">
-    <div class="headerWrap">
+    <header id="header" class="animated">
+      <div class="headerWrap">
 
-      <a href="index.html" class="logo animsition-link" style="opacity:1;">
-        <img class="logo-png" src="img/colin-logo.png">
-        <img class="logo-gif" src="img/colin-logo.gif">
-      </a>
+        <a href="index.html" class="logo animsition-link" style="opacity:1;">
+          <img class="logo-png" src="img/colin-logo.png">
+          <img class="logo-gif" src="img/colin-logo.gif">
+        </a>
 
 
-      <div class="menu-toggle">
-        <span class="lines-button">
-          <span class="lines"></span>
-        </span>
+        <div class="menu-toggle">
+          <span class="lines-button">
+            <span class="lines"></span>
+          </span>
+        </div>
+
+        <div class="lang">
+          <div class="langSelect" lang-attr="en">En</div>
+          <div class="langSelect active" lang-attr="zh-CN">中</div>
+        </div>
+
       </div>
+    </header>  
+
+    <div class="overlay"></div>
+    <div id="navList2">
+      <ul class="navFont displayEnglish">
+        <a href="index.html" class="animsition-link"><li>Work</li></a>
+        <a href="about.html" class="animsition-link"><li>About</li></a>
+        <a href="contact.html" class="animsition-link"><li>Contact</li></a>
+      </ul>
+
+      <ul class="navFont displayChinese">
+        <a href="index.html" class="animsition-link"><li>作品</li></a>
+        <a href="about.html" class="animsition-link"><li>关于我</li></a>
+        <a href="contact.html" class="animsition-link"><li>联系方式</li></a>
+      </ul>
+    </div>
+
+
+
+    <div id="loadContentHere">
+
+      <!--top slide show-->
+
+      <div class="slideShowWrap indexBg">
+        <img class="cover-title" src="img/indexTitle.png"/>
+
+      </div>
+
+      <!--main body-->
+      <main>
+
+        <div id="container" class="container">
+
+          <a href="works/britz.html">
+            <div class="item">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>BRITZ CHINESE OFFICIAL WEBSITE</h3>
+                  <h2>Britz Campervan Rental</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>房车品牌中文官网</h3>
+                  <h2>布里茨房车租赁</h2>
+                </div>
+              </div>
+              <img src="img/6.jpg" class="desaturate">
+            </div>
+          </a>
+
+          <a href="works/kiwiExperience.html">
+            <div class="item w2">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>ONLINE BOOKING PLATFORM</h3>
+                  <h2>Kiwi Experience Bus Adventure</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>在线信息订票官网</h3>
+                  <h2>Kiwi Experience旅行巴士</h2>
+                </div>
+
+              </div>
+              <img src="img/7.jpg" class="desaturate">
+            </div>
+          </a>
+
+          <a href="works/myTrends.html">
+            <div class="item w2">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>ONLINE SOCIAL PLATFORM</h3>
+                  <h2>myTrends social hub</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>居家媒体在线平台</h3>
+                  <h2>myTrends social hub</h2>
+                </div>
+
+              </div>
+              <img src="img/1.jpg" class="desaturate">
+            </div>
+          </a>
+
+          <a href="works/wellfest.html">
+            <div class="item">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>EXHIBITION CAMPAIGN</h3>
+                  <h2>Wellfest the EXPO 2014</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>健康品牌产品展览</h3>
+                  <h2>2014年Wellfest会展</h2>
+                </div>
+              </div>
+              <img src="img/5.jpg" class="desaturate">
+            </div>
+          </a>
+
+          <a href="works/poker-tea.html">
+            <div class="item">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>T2 TEA PACKAGE</h3>
+                  <h2>the Poker-Tea project</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>T2茶包产品包装设计</h3>
+                  <h2>扑克牌茶包</h2>
+                </div>
+              </div>
+              <img src="img/2.jpg" class="desaturate">
+            </div>
+          </a>
+
+          <a href="works/friends.html">
+            <div class="item">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>KIDS STORY BOOK</h3>
+                  <h2>Friends</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>儿童书籍设计制作</h3>
+                  <h2>朋友</h2>
+                </div>
+              </div>
+              <img src="img/3.jpg" class="desaturate">
+            </div>
+          </a>
+
+          <a href="works/oasis-cd.html">
+            <div class="item">
+              <div class="item-mask">
+                <div class="item-info displayEnglish">
+                  <h3>CD PACKAGE DESIGN</h3>
+                  <h2>Time flies... 1994-2009</h2>
+                </div>
+
+                <div class="item-info displayChinese">
+                  <h3>CD包装设计</h3>
+                  <h2>Time flies... 1994-2009</h2>
+                </div>
+              </div>
+              <img src="img/4.jpg" class="desaturate">
+            </div>
+          </a>
+
+
+        </div>
+
+
+
+      </main>
 
     </div>
-  </header>  
 
-  <div class="overlay"></div>
-  <div id="navList2">
-    <ul class="navFont">
-      <a href="index.html" class="animsition-link"><li>Work</li></a>
-      <a href="about.html" class="animsition-link"><li>About</li></a>
-      <a href="contact.html" class="animsition-link"><li>Contact</li></a>
-    </ul>
+    <div id="elevator_item"> 
+      <a id="elevator" onclick="return false;" title="Back To Top">
+        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="20px" viewBox="0 0 40 20" enable-background="new 0 0 40 20" xml:space="preserve">
+          <g>
+            <polygon points="39.734,20.796 20,1.061 0.265,20.796 -0.265,20.265 20,0 40.266,20.265   "></polygon>
+          </g>
+        </svg>
+      </a> 
+      <!-- <a class="qr"></a> -->
+    <!-- <div class="qr-popup" style="display: none;"> 
+      <a class="code-link"> 
+        <img class="code" src="img/colinshawQRcode.png"> 
+      </a> 
+      <span>Send it to Friends!</span>
+      <div class="arr"></div>
+    </div> -->
   </div>
 
 
-  <!--top slide show-->
 
-  <div id="fullscreen-cover" class="slideShowWrap indexBg">
-    <img class="cover-title" src="img/indexTitle.png"/>
+  <!-- Footer -->
 
-  </div>
-
-</div>
-
-
-
-<!--main body-->
-<main>
-
-  <div id="container" class="container">
-    <a href="works/myTrends.html" class="animsition-link">
-      <div class="item w2">
-        <div class="item-mask">
-          <div class="item-info">
-            <h3>ONLINE SOCIAL PLATFORM</h3>
-            <h2>myTrends social hub</h2>
-          </div>
-        </div>
-        <img src="img/1.jpg" class="desaturate">
-      </div>
-    </a>
-
-    <a href="works/poker-tea.html" class="animsition-link">
-      <div class="item">
-        <div class="item-mask">
-          <div class="item-info">
-            <h3>T2 TEA PACKAGE</h3>
-            <h2>the Poker-Tea project</h2>
-          </div>
-        </div>
-        <img src="img/2.jpg" class="desaturate">
-      </div>
-    </a>
-
-    <a href="works/friends.html" class="animsition-link">
-      <div class="item">
-        <div class="item-mask">
-          <div class="item-info">
-            <h3>KIDS STORY BOOK</h3>
-            <h2>Friends</h2>
-          </div>
-        </div>
-        <img src="img/3.jpg" class="desaturate">
-      </div>
-    </a>
-
-    <a href="works/oasis-cd.html" class="animsition-link">
-      <div class="item">
-        <div class="item-mask">
-          <div class="item-info">
-            <h3>CD PACKAGE DESIGN</h3>
-            <h2>Time flies... 1994-2009</h2>
-          </div>
-        </div>
-        <img src="img/4.jpg" class="desaturate">
-      </div>
-    </a>
-
-    <a href="works/wellfest.html" class="animsition-link">
-      <div class="item">
-        <div class="item-mask">
-          <div class="item-info">
-            <h3>EXHIBITION CAMPAIGN</h3>
-            <h2>Wellfest the EXPO 2014</h2>
-          </div>
-        </div>
-        <img src="img/5.jpg" class="desaturate">
-      </div>
-    </a>
-
-
-  </div>
-  <a href="contact.html" class="animsition-link">
-    <div class="see-more-works"><h3>CONTACT ME</h3></div>
-  </a> 
-
-
-</main>
-
-
-<div id="elevator_item"> 
-  <a id="elevator" onclick="return false;" title="Back To Top">
-    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="20px" viewBox="0 0 40 20" enable-background="new 0 0 40 20" xml:space="preserve">
-      <g>
-        <polygon points="39.734,20.796 20,1.061 0.265,20.796 -0.265,20.265 20,0 40.266,20.265   "></polygon>
-      </g>
-    </svg>
-  </a> 
-  <a class="qr"></a>
-  <div class="qr-popup" style="display: none;"> 
-    <a class="code-link"> 
-      <img class="code" src="img/colinshawQRcode.png"> 
+  <footer >
+    <a href="contact.html" class="animsition-link">
+      <div class="see-more-works"><h3>CONTACT ME</h3></div>
     </a> 
-    <span>Send it to Friends!</span>
-    <div class="arr"></div>
-  </div>
-</div>
-
-
-
-<!-- Footer -->
-
-<footer >
-
-</footer>
+  </footer>
 
 </div>
 
