@@ -1,29 +1,122 @@
-<div id="loadContentFrom">
 
-  <!--top slide show-->
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colin Shaw</title>
 
-  <div id="fullscreen-cover" class="slideShowWrap aboutBg">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Maven+Pro:400,900,700,500|Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css" />
 
-    <div class="about-me-wrapper">
-      <div class="about-me">
-        <div class="me"><img src="img/me.jpg"></div>
-        <h2 style=" width: 80%; margin: 0 auto 30px;">Graphic • UIUX • Front-End</h2>
-        <p>My name is <b>Colin Shaw</b> and i’m a Graphic Designer & Front-End Developer based in Auckland.</p>
-        <p>I was born and raised in a coastal city call Zhuhai, in south China. I graduated from Beijing Normal University with a Bachelor’s degree majoring in Advertising. This has equipped me with a solid foundation of knowledge on communication and marketing in the industry.</p>
-        <p>I have been working two years’ within the industry and have enjoyed working with clients such as Trends, WELLfest, ImageOasis, GetaboutOz and others. Dealing with a wide range of branding, print design, UIUI and front-end development challenges.</p>
-        <p>I currently work with the fine folks at Hubstar Ltd. I also work on side projects focused on all kinds of interactive stuff. My skill, passion and energy are available for companies seeking creative and distinctive designs and high-value user experience for their product.</p>
-        <br/>
-        <p>I am also a musician involved in a number of exciting projects within New Zealand, including the 2014 Battle of the Band finalist <a href="https://www.facebook.com/saltycandyband" target="_blank">Salty Candy</a>.</p>
 
-        <p>Feel free to <a href="contact.html">contact</a> me.</p>
+  <!-- modernizr -->
+  <script src="js/third-party/modernizr-custom.js"></script>
+  <!-- modernizr -->
+  <script src="js/jquery-3.1.1.min.js"></script>
 
-        <img class="logo-png" src="img/colin-logo.png" style="width: 40px; margin: 20px;">
+  <script src="js/headroom.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
 
-        <p style="font-size:.8rem"><a href="colinsCV.pdf" target="_blank">Download my pdf CV here.</a></p>
+  <script src="js/script.js"></script>
+</head>
+
+
+<body >
+  <div class="animsition">
+
+    <header id="header" class="animated">
+      <div class="headerWrap">
+
+        <a href="index.html" class="logo animsition-link" style="opacity:1;">
+          <img class="logo-png" src="img/colin-logo.png">
+          <img class="logo-gif" src="img/colin-logo.gif">
+        </a>
+
+
+        <div class="menu-toggle">
+          <span class="lines-button">
+            <span class="lines"></span>
+          </span>
+        </div>
+
+        <div class="lang">
+          <div class="langSelect" lang-attr="en">En</div>
+          <div class="langSelect active" lang-attr="zh-CN">中</div>
+        </div>
 
       </div>
+    </header>  
+
+    <div class="overlay"></div>
+    <div id="navList2">
+      <ul class="navFont displayEnglish">
+        <a href="index.html" class="animsition-link"><li>Work</li></a>
+        <a href="about.html" class="animsition-link"><li>About</li></a>
+        <a href="contact.html" class="animsition-link"><li>Contact</li></a>
+      </ul>
+
+      <ul class="navFont displayChinese">
+        <a href="index.html" class="animsition-link"><li>作品</li></a>
+        <a href="about.html" class="animsition-link"><li>关于我</li></a>
+        <a href="contact.html" class="animsition-link"><li>联系方式</li></a>
+      </ul>
     </div>
-    
+
+
+    <!--top slide show-->
+
+    <div id="fullscreen-cover" class="slideShowWrap aboutBg">
+
+      <div class="about-me-wrapper">
+        <div class="about-me">
+          <div class="me"><img src="img/me.jpg"></div>
+          <h2 style=" width: 80%; margin: 0 auto 30px;">Graphic • UIUX • Front-End</h2>
+          <p>My name is <b>Colin Shaw</b> and i’m a Graphic Designer & Front-End Developer based in Auckland.</p>
+          <p>I was born and raised in a coastal city call Zhuhai, in south China. I graduated from Beijing Normal University with a Bachelor’s degree majoring in Advertising. This has equipped me with a solid foundation of knowledge on communication and marketing in the industry.</p>
+          <p>I have been working two years’ within the industry and have enjoyed working with clients such as Trends, WELLfest, ImageOasis, GetaboutOz and others. Dealing with a wide range of branding, print design, UIUI and front-end development challenges.</p>
+          <p>I currently work with the fine folks at Hubstar Ltd. I also work on side projects focused on all kinds of interactive stuff. My skill, passion and energy are available for companies seeking creative and distinctive designs and high-value user experience for their product.</p>
+          <br/>
+          <p>I am also a musician involved in a number of exciting projects within New Zealand, including the 2014 Battle of the Band finalist <a href="https://www.facebook.com/saltycandyband" target="_blank">Salty Candy</a>.</p>
+
+          <p>Feel free to <a href="contact.html">contact</a> me.</p>
+
+          <img class="logo-png" src="img/colin-logo.png" style="width: 40px; margin: 20px;">
+
+          <p style="font-size:.8rem"><a href="ColinShawCV.pdf" target="_blank">Download my pdf CV here.</a></p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="elevator_item"> 
+      <a id="elevator" onclick="return false;" title="Back To Top">
+        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="20px" viewBox="0 0 40 20" enable-background="new 0 0 40 20" xml:space="preserve">
+          <g>
+            <polygon points="39.734,20.796 20,1.061 0.265,20.796 -0.265,20.265 20,0 40.266,20.265   "></polygon>
+          </g>
+        </svg>
+      </a> 
+      <!-- <a class="qr"></a> -->
+    <!-- <div class="qr-popup" style="display: none;"> 
+      <a class="code-link"> 
+        <img class="code" src="img/colinshawQRcode.png"> 
+      </a> 
+      <span>Send it to Friends!</span>
+      <div class="arr"></div>
+    </div> -->
   </div>
 
+
+
+  <!-- Footer -->
+
 </div>
+
+</body>
+</html>
+

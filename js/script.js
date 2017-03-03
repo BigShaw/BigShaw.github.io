@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 
 	// ajax load pages contents
-	$('.container a, .navFont a').click(function(e){
+	$('.container a').click(function(e){
 		e.preventDefault();
 		var thisUrl = $(this).attr('href');
 		$("#loadContentHere").html('').load('/' +thisUrl+' #loadContentFrom', function(){
