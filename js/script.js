@@ -169,6 +169,7 @@ $(document).ready(function(){
 
 
 //this is for header image size same as window size
+//now this is replaced by height:100vh;
 
 var divHeight = 0;
 
@@ -187,7 +188,7 @@ function heightUpdate(){
 /* responsive dom function begins */
 
 
-
+//scroll for top bar to appear
 $(document).scroll(function () {
 	var y = $(this).scrollTop();
 	if (y > divHeight) {

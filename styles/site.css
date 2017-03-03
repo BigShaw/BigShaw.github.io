@@ -1205,6 +1205,8 @@ html[lang="zh-CN"] .displayEnglish {
     font-weight: 100; }
     .about-me p a {
       color: #f9d761; }
+  .about-me.displayChinese p {
+    font-size: 1rem; }
 
 .contact-list {
   font-size: 3rem;
