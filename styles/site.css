@@ -648,6 +648,48 @@ img {
   -o-animation-name: slideUp;
   animation-name: slideUp; }
 
+.spin, .logo:hover use.beams {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg); } }
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 /*---------------------------------------ANIMATION END-------------------------------------*/
 .animsition,
 .animsition-overlay {
@@ -767,17 +809,10 @@ img {
   height: 40px;
   width: 40px;
   float: left;
-  margin: 10px 0; }
-  .logo img {
-    width: 100%; }
-  .logo .logo-png {
-    display: block; }
-  .logo .logo-gif {
-    display: none; }
-  .logo:hover .logo-png {
-    display: none; }
-  .logo:hover .logo-gif {
-    display: block; }
+  margin: 10px 0;
+  opacity: 1 !important; }
+  .logo use {
+    fill: #fff; }
 
 .lang {
   position: relative;

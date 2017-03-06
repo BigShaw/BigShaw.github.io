@@ -11,16 +11,19 @@
     width: 40px;
     float: left;
     margin: 10px 0;
+    opacity: 1 !important; 
 
-    img{width:100%;}
-    .logo-png{display:block}
-    .logo-gif{display:none}
+    use{
+        fill:#fff; 
+    }
 
     &:hover{
-        .logo-png{display:none}
-        .logo-gif{display:block}
+        use.beams{
+            @extend .spin ;
+        }
     }
 }
+
 
 .lang{
     position: relative;
