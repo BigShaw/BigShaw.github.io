@@ -136,9 +136,18 @@ html[lang="zh-CN"] .displayEnglish{display: none; }
   top: 85vh;
   
   cursor: pointer;
+  
+  use{
+    stroke: #ffffff;
+  }
 }
 
-
+.backToTop{
+  use{
+    stroke: #333333;
+    stroke-width: 2;
+  }
+}
 
 
 
