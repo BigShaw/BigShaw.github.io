@@ -95,9 +95,10 @@ $(document).ready(function(){
 
 
 
-
-
-
+	$('.homepage_downarrow_position').click(function(){
+		windowHeight = $( window ).height();
+		$("html,body").animate({scrollTop: windowHeight}, 500);
+	});
 
 
 

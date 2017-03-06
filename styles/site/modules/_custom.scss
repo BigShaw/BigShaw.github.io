@@ -126,6 +126,18 @@ html[lang="zh-CN"] .displayEnglish{display: none; }
 
 
 
+.homepage_downarrow_position{
+  position: absolute;
+  z-index: 1;
+  width: 65px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 85vh;
+  
+  cursor: pointer;
+}
+
 
 
 
