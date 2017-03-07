@@ -1204,6 +1204,12 @@ html[lang="zh-CN"] .displayEnglish {
   .about-me.displayChinese p {
     font-size: 1rem; }
 
+.logoWhite svg {
+  width: 40px;
+  margin: 20px; }
+  .logoWhite svg use {
+    fill: #fff; }
+
 .contact-list {
   font-size: 3rem;
   list-style-type: none; }

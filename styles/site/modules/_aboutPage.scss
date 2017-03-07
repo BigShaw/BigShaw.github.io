@@ -50,6 +50,17 @@ p{
 }
 
 
+.logoWhite{
+    svg{
+        width: 40px; 
+        margin: 20px;
+        use{
+            fill:#fff; 
+        }
+    }
+}
+
+
 .contact-list{
     font-size: 3rem;
     list-style-type: none;
