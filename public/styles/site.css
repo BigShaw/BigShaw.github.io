@@ -1216,7 +1216,37 @@ img {
   opacity: 0.6;
 }
 
+/* line 1, site/modules/_custom.scss */
+.homePage_top {
+  width: 100vw;
+  height: 100vh;
+  background: #282828;
+  overflow: hidden;
+  position: relative;
+}
 /* line 7, site/modules/_custom.scss */
+.homePage_top .text_position {
+  position: absolute;
+  top: -1%;
+  width: 100%;
+  height: 100%;
+}
+/* line 14, site/modules/_custom.scss */
+.homePage_top p {
+  color: white;
+  text-align: center;
+  padding: 0 2%;
+}
+/* line 19, site/modules/_custom.scss */
+.homePage_top p#saySomeThingCn {
+  font-size: 1.5rem;
+}
+/* line 22, site/modules/_custom.scss */
+.homePage_top p#saySomeThingEng {
+  font-size: 2rem;
+}
+
+/* line 36, site/modules/_custom.scss */
 .gradient-mask-text {
   background: transparent;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #61c2ff), color-stop(100%, #cd4444));
@@ -1227,7 +1257,7 @@ img {
   text-fill-color: transparent;
 }
 
-/* line 17, site/modules/_custom.scss */
+/* line 46, site/modules/_custom.scss */
 .cover-title {
   top: 50%;
   position: absolute;
@@ -1238,7 +1268,7 @@ img {
   margin: -12% auto 0;
 }
 
-/* line 28, site/modules/_custom.scss */
+/* line 57, site/modules/_custom.scss */
 .content_onCover {
   position: absolute;
   margin: auto;
@@ -1248,30 +1278,30 @@ img {
   color: #fff;
   text-align: center;
 }
-/* line 37, site/modules/_custom.scss */
+/* line 66, site/modules/_custom.scss */
 .content_onCover .text_content {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-/* line 40, site/modules/_custom.scss */
+/* line 69, site/modules/_custom.scss */
 .content_onCover .text_content h3 {
   color: #f9d761;
   font-weight: 100;
   margin: 0;
   font-size: 1rem;
 }
-/* line 47, site/modules/_custom.scss */
+/* line 76, site/modules/_custom.scss */
 .content_onCover .text_content h1 {
   margin: 0;
 }
 
-/* line 55, site/modules/_custom.scss */
+/* line 84, site/modules/_custom.scss */
 .desaturate {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 62, site/modules/_custom.scss */
+/* line 91, site/modules/_custom.scss */
 .see-more-works {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1289,13 +1319,13 @@ img {
   text-align: center;
   color: white;
 }
-/* line 74, site/modules/_custom.scss */
+/* line 103, site/modules/_custom.scss */
 .see-more-works:hover {
   opacity: .8;
   color: #f9d761;
 }
 
-/* line 79, site/modules/_custom.scss */
+/* line 108, site/modules/_custom.scss */
 .blueBGsection {
   /* #a8d5e4+0,92cadd+100 */
   background: #a8d5e4;
@@ -1314,7 +1344,7 @@ img {
   overflow: hidden;
   position: relative;
 }
-/* line 93, site/modules/_custom.scss */
+/* line 122, site/modules/_custom.scss */
 .blueBGsection .story_moving_bg {
   position: relative;
   width: 100%;
@@ -1323,7 +1353,7 @@ img {
   margin: auto;
   padding: 0;
 }
-/* line 104, site/modules/_custom.scss */
+/* line 133, site/modules/_custom.scss */
 .blueBGsection .panel {
   max-width: 650px;
   padding: 20px 3%;
@@ -1336,17 +1366,17 @@ img {
   right: 0;
 }
 
-/* line 120, site/modules/_custom.scss */
+/* line 149, site/modules/_custom.scss */
 html[lang="en"] .displayChinese {
   display: none;
 }
 
-/* line 121, site/modules/_custom.scss */
+/* line 150, site/modules/_custom.scss */
 html[lang="zh-CN"] .displayEnglish {
   display: none;
 }
 
-/* line 129, site/modules/_custom.scss */
+/* line 158, site/modules/_custom.scss */
 .homepage_downarrow_position {
   position: absolute;
   z-index: 1;
@@ -1357,12 +1387,12 @@ html[lang="zh-CN"] .displayEnglish {
   top: 85vh;
   cursor: pointer;
 }
-/* line 140, site/modules/_custom.scss */
+/* line 169, site/modules/_custom.scss */
 .homepage_downarrow_position use {
   stroke: #ffffff;
 }
 
-/* line 146, site/modules/_custom.scss */
+/* line 175, site/modules/_custom.scss */
 .backToTop use {
   stroke: #333333;
   stroke-width: 2;

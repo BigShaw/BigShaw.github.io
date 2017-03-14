@@ -1,3 +1,32 @@
+.homePage_top{
+  width:100vw; 
+  height:100vh; background:rgb(40,40,40);
+  overflow:hidden;
+  position:relative;
+
+  .text_position{
+    position: absolute;
+    top: -1%;
+    width: 100%;
+    height: 100%;
+  }
+
+  p{
+    color:white;
+    text-align: center; 
+    padding: 0 2%;
+
+    &#saySomeThingCn{
+      font-size:1.5rem; 
+    }
+    &#saySomeThingEng{
+      font-size:2rem; 
+    }
+
+  }
+
+
+}
 
 
 

@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
 
-
 	function loadShits(){
 		$('.bxslider').bxSlider();
 

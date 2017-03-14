@@ -23,13 +23,16 @@ module.exports = function(grunt) {
   			my_target: {
   				files: {
   					'./public/js/script.min.js': [
-  					'./public/js/third-party/jquery-3.1.1.min.js',
-  					'./public/js/third-party/animsition.min.js',
-  					'./public/js/third-party/headroom.js',
-  					'./public/js/third-party/jquery.bxslider.min.js',
-  					'./public/js/third-party/masonry.pkgd.min.js',
-  					'./public/js/third-party/modernizr-custom.js',
+  					// './public/js/third-party/jquery-3.1.1.min.js',
+  					// './public/js/third-party/animsition.min.js',
+  					// './public/js/third-party/headroom.js',
+  					// './public/js/third-party/jquery.bxslider.min.js',
+  					// './public/js/third-party/masonry.pkgd.min.js',
+  					// './public/js/third-party/modernizr-custom.js',
+  					// './public/js/third-party/typeit.min.js',
 					// our scripts ---
+					'./public/js/partials/typeitScript.js',
+					'./public/js/partials/movingDocs.js',
 					'./public/js/script.js'
 					]
 				}

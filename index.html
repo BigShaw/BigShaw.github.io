@@ -9,19 +9,57 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="public/styles/site.css" />
   <script src="//localhost:35729/livereload.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/4.3.0/typeit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <!-- -->
   <script src="public/js/script.min.js"></script> 
 
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <!-- 
+  <script src="public/js/third-party/jquery-3.1.1.min.js"></script>
+  <script src="public/js/third-party/typeit.min.js"></script>
+  <script src="public/js/third-party/animsition.min.js"></script>
+  <script src="public/js/third-party/headroom.js"></script>
+  <script src="public/js/third-party/jquery.bxslider.min.js"></script>
+  <script src="public/js/third-party/masonry.pkgd.min.js"></script>
+  <script src="public/js/third-party/modernizr-custom.js"></script>
 
-  ga('create', 'UA-93514863-1', 'auto');
-  ga('send', 'pageview');
 
-  </script>
+  <script src="public/js/partials/typeitScript.js"></script>
+  <script src="public/js/partials/movingDocs.js"></script>
+  <script src="public/js/script.js"></script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-93514863-1', 'auto');
+ga('send', 'pageview');
+
+</script>
 </head>
 
 <body >
@@ -92,10 +130,24 @@
 
       <!--top slide show-->
 
-      <div class="slideShowWrap indexBg">
+      <!-- <div class="slideShowWrap indexBg">
         <img class="cover-title" src="img/indexTitle.png"/>
+      </div> -->
+
+
+      <div class="homePage_top">
+        <canvas id="canvas" style="opacity: 0.7;"></canvas>
+
+        <table class="text_position">
+          <tr><td>
+            <p id="saySomeThingCn"></p>
+            <!-- <p id="saySomeThingEng" class="displayEnglish"></p> -->
+          </td></tr>
+        </table>
+
 
       </div>
+      
 
       <!--main body-->
       <main>
