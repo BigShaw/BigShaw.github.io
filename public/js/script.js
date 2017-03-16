@@ -150,16 +150,6 @@ $(document).ready(function(){
 
 
 
-
-	// grab an element
-	var myElement = document.querySelector("header");
-	// construct an instance of Headroom, passing the element
-	var headroom  = new Headroom(myElement);
-	// initialise
-	headroom.init(); 
-
-
-
 });
 
 
@@ -186,7 +176,7 @@ function heightUpdate(){
 //scroll for top bar to appear
 $(document).scroll(function () {
 	var y = $(this).scrollTop();
-	if (y > divHeight) {
+	if (y > divHeight-50) {
 		$('#header').css("background-color", "rgba(0,0,0,.8)");
 	} else {
 		$('#header').css("background-color", "transparent");

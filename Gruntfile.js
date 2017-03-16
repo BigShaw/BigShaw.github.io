@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 				}
 			},
 			uglify: {
-				files: ['./public/js/*.js'],
+				files: ['./public/js/**/*.js'],
 				tasks: ['clean:js','uglify'],
 				trace: true,
 				options: {

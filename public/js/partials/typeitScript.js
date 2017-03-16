@@ -23,7 +23,7 @@ $(document).ready(function(){
 	.tiSettings({speed: 700})
 	.tiType('...')
 	.tiPause(750)
-	.tiSettings({speed: 50})
+	.tiSettings({speed: 100})
 	.tiDelete()
 	.tiType('然而这就是他，他想要<strong>活下去</strong>');
 
